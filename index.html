@@ -4,118 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            margin: 0; padding: 0;
+            font-family: "맑은 고딕";
+        }
+        ul,ol,li{
+            list-style: none; margin: 0; padding: 0;
+        }
+        header{width: 1100px; height: 100px; margin: 0 auto;}
+        #logo{float: left; width: 175px; height: 65px; margin: 16px 0 0 10px;} 
+        #logo > img{width: 140px; height: 65px; margin: 3px 10px 10px;}
+        nav{float: right; width: 420px; height: 30px; margin: 55px 20px 0 0;}
+        nav ul{font-size: 19px; font-family: "Arial";}
+        nav ul li{float: left; padding: 0 20px;}
+        nav ul li a{text-decoration: none; color: #333;}
+        nav ul li a:hover{color: lightgray; text-decoration: underline;}
+
+        #slider{width: 1100px; height: 500px; margin: 0 auto;}
+        #slider img{width: 1100px; height: 500px;}
+
+        #camp1 {width: 1100px; height: 400px; margin: 0 auto;}
+        #camp1 > h3 {font-size: 40px; color: #000; text-align: center; 
+            background-color: #fff; letter-spacing: 5px; line-height:60px;}
+        #camp1 > .box {width: 200px; height: 160px; background-color: #fff;
+            display: inline-block; margin: -30px 35px; text-align: center;}
+        #camp1 > .box > a > img {width: 100%; height: 160px;}
+        #camp1 > .box > h4 > a {font-size: 17px; color: #000; text-decoration: none;}
+        #camp1 > .box > span > a {font-size: 14px; color: #000; font-weight:bold; 
+            text-decoration: none; display: block; margin-top: -17px;} 
+        section{width: 1100px; height: 400px; margin: 30px 20px 0 0;}
+
+        article{width: 340px; height: 200px;
+            float: left; text-align: center; margin: 0 auto;}
+        article img{width: 250px; height: 250px; text-align: center; margin: 0 51px;
+            margin-top: 30px;}
+        article h3{margin-top: 5px; font-size: 16px; height: 30px; width: 100%;}
+        article p{margin-top: -15px; font-family: "돋움"; font-size: 12px; color: #666;}
+        
+        footer{width: 1100px; height: 150px; margin:0 auto; background-color: #000;}
+        footer img{float: left; margin: 45px 0 0 20px;}
+        footer p{font-family: "돋움"; font-size: 12px; color: #fff; margin: 38px 80px 0 45px;
+            float: left; font-weight: bold; line-height: 0;}
+        footer > div{float: right; width: 250px; height: 150px; margin: 0 auto; 
+            line-height: 0; margin-top: -10px;}
+        footer > div > h4{color: #fff; margin-top: -45px;}
+        footer > div > h2{color: #fff; margin-top: 25px;}
+        footer > div > p{color: gainsboro; font-size: 12px; line-height: 1.5; 
+            margin: 5px 0 0 2px;}
+        .wide-gap1 {letter-spacing: 24px;}
+        .wide-gap2 {letter-spacing: 48px;}
+        .wide-gap3 {letter-spacing: 9px;}
+    </style>
 </head>
-<style>
-    *{margin: 0; box-sizing: box;}
-    ul, ol, li {list-style: none; margin: 0; padding: 0;}
-    a {text-decoration:none;}
-    /*일반캠핑*/
-    #camp1 {width: 1000px; height: 900px; margin: 0 auto; border-bottom: 2px solid gray;}
-    #camp1 > h3 {font-size: 30px; color: #000; text-align: center; 
-        background-color: #fff; letter-spacing: 5px; line-height:90px;}
-    #camp1 > p {font-size: 20px; color: palevioletred; text-align: center; 
-        font-weight: bold; background-color: #fff; line-height: 50px;}
-    #camp1 > .box {width: 200px; height: 260px; background-color: #fff;
-        display: inline-block; margin: 50px 22px;}
-    #camp1 > .box > a > img {width: 100%; height: 200px;}
-    #camp1 > .box > h4 > a {font-size: 17px; color: #000;}
-    #camp1 > .box > p > a {font-size: 12px; color: #666; font-weight: bold;}
-    #camp1 > .box > span > a {font-size: 14px; color: #000;}
-    /*벚꽃캠핑*/
-    #camp2 > h3 {font-size: 30px; color: #000; text-align: center; 
-        background-color: #fff; letter-spacing: 5px; line-height:90px;}
-    #camp2 {width: 1000px; height: 500px; margin: 0 auto;}
-    #camp2 > p {font-size: 20px; color: palevioletred; text-align: center; 
-        font-weight: bold; background-color: #fff; line-height: 50px;}
-    #camp2 > .box {width: 200px; height: 260px; background-color: #fff;
-        display: inline-block; margin: 50px 22px;}
-    #camp2 > .box > a > img {width: 100%; height: 200px;}
-    #camp2 > .box > h4 > a {font-size: 17px; color: #000;}
-    #camp2 > .box > p > a {font-size: 12px; color: #666; font-weight: bold;}
-    #camp2 > .box > span > a {font-size: 14px; color: #000;}
-    
-</style>
 <body>
+    <header>
+        <div id="logo"><img src="minimal/logo.png"></div>
+        <nav>
+            <ul>
+                <li><a href="https://www.minimalworks.co.kr/goods/goods_list.php?cateCd=014">GEAR</a></li>
+                <li><a href="https://www.minimalworks.co.kr/service/company.php">BRAND</a></li>
+                <li><a href="https://www.minimalworks.co.kr/service/notice.php">NOTICE</a></li>
+                <li><a href="https://www.minimalworks.co.kr/board/view.php?&bdId=notice&sno=8">A/S</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="slider"><img src="minimal/img1.jpg"></div>
     <div id="camp1">
-        <h3>캠핑이 특별해지는 곳</h3>
-        <p>따뜻한 봄, 캠핑의 계절이 왔어요</p>
+        <h3>CAMPERS PICK</h3>
         <div class="box">
-            <a href="#"><img src="campingpt/camping04.jpg" alt="캠프봉봉"></a>
-            <h4><a href="#">캠프봉봉</a></h4>
-            <p><a href="#">서울 근교 가평 캠핑장</a></p>
-            <span><a href="#">1박 6~7만원</a></span>
+            <a href="https://www.minimalworks.co.kr/goods/goods_view.php?goodsNo=866&mtn=1%5E%7C%5ECAMPERS+PICK%5E%7C%5En">
+                <img src="minimal/1111.jpg" alt="쉘터G"></a>
+            <h4><a href="#">미니멀웍스 쉘터G 블랙</a></h4>
+            <span><a href="#">980,000원</a></span>
         </div>
         <div class="box">
-            <a href="#"><img src="campingpt/camping02.jpg" alt="필리가캠핑"></a>
-            <h4><a href="#">필리가캠핑</a></h4>
-            <p><a href="#">밤 하늘이 예쁜 영월 캠핑장</a></p>
-            <span><a href="#">1박 6~7만원</a></span>
+            <a href="https://www.minimalworks.co.kr/goods/goods_view.php?goodsNo=773">
+                <img src="minimal/2222.jpg" alt="빅볼"></a>
+            <h4><a href="#">빅볼R 올리브</a></h4>
+            <span><a href="#">2,640,000원</a></span>
         </div>
         <div class="box">
-            <a href="#"><img src="campingpt/camping01.jpg" alt="해미모꼬지캠핑장"></a>
-            <h4><a href="#">해미 모꼬지 캠핑장</a></h4>
-            <p><a href="#">키즈 캠핑장, 개별 편의시설</a></p>
-            <span><a href="#">1박 7~9만원</a></span>
+            <a href="https://www.minimalworks.co.kr/goods/goods_view.php?goodsNo=706">
+                <img src="minimal/4444.jpg" alt="브이하우스스"></a>
+            <h4><a href="#">브이하우스 L 아이보리</a></h4>
+            <span><a href="#">1,480,000원</a></span>
         </div>
         <div class="box">
-            <a href="#"><img src="campingpt/camping07.jpg" alt="어게인스쿨"></a>
-            <h4><a href="#">어게인스쿨</a></h4>
-            <p><a href="#">나무,숲,학교 그리고 추억</a></p>
-            <span><a href="#">1박 5~6만원</a></span>
+            <a href="https://www.minimalworks.co.kr/goods/goods_view.php?goodsNo=845">
+                <img src="minimal/3333.jpg" alt="뚜띠텐트"></a>
+            <h4><a href="#">뚜띠 텐트 차콜</a></h4>
+            <span><a href="#">2,680,000원</a></span>
         </div>
-        <div class="box">
-            <a href="#"><img src="campingpt/camping05.jpg" alt="평창바샘캠핑장"></a>
-            <h4><a href="#">평창 바샘캠핑장</a></h4>
-            <p><a href="#">아름다운 산으로 포근하게 감싼 곳</a></p>
-            <span><a href="#">1박 5~6만원</a></span>
+    <section>
+        <article>
+            <a href="#"><img src="minimal/newg.jpg"></a>
+            <h3>쉘터G 블랙 출시</h3>
+            <p>SHELTER G쉘터 블랙 출시!<br>많은 분들이 기다리고, 요청해주셨던<br>
+            쉘터G 블랙이 출시되었습니다.</p>
+        </article>
+        <article>
+            <a href="#"><img src="minimal/vhouse.jpg"></a>
+            <h3>브이하우스 M/L</h3>
+            <p>Vhouse M/L 브이하우스 쉘터<br>양옆 패널과 스킨 + 메쉬 도어로<br>
+            어디서든 유연하게 세팅 가능!!</p>
+        </article>
+        <article>
+            <a href="#"><img src="minimal/ddd.jpg"></a>
+            <h3>미니멀웍스 뚜띠</h3>
+            <p>TUTTI 견고한 폴 구조로 설계되어<br>안정적인 설치가 가능하며, 8~10인을<br>
+            수용할 수 있어 베이스 쉘터로<br>사용하기 적합합니다.</p>
+        </article>
+    </section>
+    <footer>
+        <img src="minimal/logo1.png">
+            <p>상호명 : (주)제이디오  대표 : 정병길  주소 : 경기도 안양시 동안구 엘에스로 23 JDO빌딩</p>
+            <p>사업자등록번호 : 492-87-00724[사업자정보확인]  통신판매업신고 : 2019-안양동안-0585</p>
+            <p>개인정보보호책임자 : 이희영  E-MAIL : jdo@jdoutdoor.co.kr  고객센터 : 070-8796-0869</p>
+        <div>
+            <h4>Customer center</h4>
+            <h2>070-8796-0869</h2>
+            <p>월~<span class="wide-gap1">금</span>10:00-17:00<br><span class="wide-gap2">목</span>10:00-16:00<br>점심시<span class="wide-gap3">간</span>12:00-13:00 제외<br>
+            주말 및 공휴일 휴무</p>
         </div>
-        <div class="box">
-            <a href="#"><img src="campingpt/camping11.jpg" alt="산정호수돌고래캠핑장"></a>
-            <h4><a href="#">산정호수돌고래캠핑장</a></h4>
-            <p><a href="#">청결한 시설과 친절한 서비스</a></p>
-            <span><a href="#">1박 7만원</a></span>
-        </div>
-        <div class="box">
-            <a href="#"><img src="campingpt/camping10.jpg" alt="한탄강둘레길캠핑장"></a>
-            <h4><a href="#">한탄강둘레길캠핑장</a></h4>
-            <p><a href="#">한탄강과 둘레길로 이어지는 캠핑장</a></p>
-            <span><a href="#">1박 6만원(연박할인)</a></span>
-        </div>
-        <div class="box">
-            <a href="#"><img src="campingpt/camping06.jpg" alt="춘천숲자연휴양림캠핑장"></a>
-            <h4><a href="#">춘천숲자연휴양림캠핑장</a></h4>
-            <p><a href="#">울창한 숲속 자연휴양림</a></p>
-            <span><a href="#">1박 7만원</a></span>
-        </div>
-    </div>
-    <br>
-    <div id="camp2">
-        <h3>특별한 추억 만들기</h3>
-        <p>올 봄엔 벚꽃 캠핑장으로~~</p>
-        <div class="box">
-            <a href="#"><img src="campingpt/camping15.jpg" alt="문수골힐링캠핑장"></a>
-            <h4><a href="#">문수골힐링캠핑장</a></h4>
-            <p><a href="#">천혜의 자연환경과 함께 하는 캠핑장</a></p>
-            <span><a href="#">1박 6만원</a></span>
-        </div>
-        <div class="box">
-            <a href="#"><img src="campingpt/camping16.jpg" alt="패밀리오토캠핑장"></a>
-            <h4><a href="#">패밀리오토캠핑장</a></h4>
-            <p><a href="#">편안한 힐링 캠핑장</a></p>
-            <span><a href="#">1박 7만원</a></span>
-        </div>
-        <div class="box">
-            <a href="#"><img src="campingpt/camping17.jpg" alt="미르캠핑장"></a>
-            <h4><a href="#">미르캠핑장</a></h4>
-            <p><a href="#">밀양 벚꽃 캠핑장</a></p>
-            <span><a href="#">1박 7~8만원</a></span>
-        </div>
-        <div class="box">
-            <a href="#"><img src="campingpt/camping18.jpg" alt="청도별빛마을"></a>
-            <h4><a href="#">청도 별빛마을</a></h4>
-            <p><a href="#">쾌적한 편의 시설의 조화</a></p>
-            <span><a href="#">1박 5~6만원</a></span>
-        </div>
-    </div>
+    </footer>
 </body>
 </html>
