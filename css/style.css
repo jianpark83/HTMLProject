@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div h3{
+    color: red;
+}
+body > h3{          /* > 를 하면 body 바로 아래까지만 적용 */
+    color: blueviolet;
+}
+li{
+    color:blue;
+    list-style-type:none;
+ }
+
+.b1{
+    background-color: yellow;
+ }
+
+#it1{
+    background-color: aqua;
+}
+
+#a1{
+    color: blue;
+}
+.c1{
+    color: red;
+}
