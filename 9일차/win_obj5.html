@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!--p.448~9 새로운 창 열고 닫기(open(), close())-->
+
+<body>
+   <input type="button" value="open" id="open">
+   <input type="button" value="close" id="close">
+
+   <script>
+    window.onload = function(){
+        let w;
+        document.getElementById("open").onclick = 
+        function(){
+            w = open("newPage.html", "new page", "width=400, height=300");
+        };
+
+        document.getElementById("close").onclick =
+        function(){
+            if(w){
+                w.close();
+            }
+        };
+    }
+   </script>
+</body>
+</html>
