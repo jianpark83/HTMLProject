@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0; box-sizing: border-box;}
+        ul, ol, li{list-style: none; margin: 0; padding: 0;}
+
+        header{width: 1100px; height: 160px; background-color: gold; margin: 0 auto;}
+        #logo{width: 170px; height: 70px; margin: 20px 0 0 0; float: left;}
+        #logo > img{width: 170px; height: 70px;}
+        #login{width: 295px; height: 30px; margin: 20px 30px 0 0; float: right;}
+        #login ul{font-size: 12px; color: #666;}
+        #login li{float: left; margin: 0 5px;}
+        #login li a{text-decoration: none; color: #666;}
+
+        nav{width: 800px; line-height: 40px; float: right; margin: 30px 0 0 0;}
+        nav ul{font-weight: bold;}
+        nav ul li{float: left; padding-left: 40px;}
+        nav ul li a{text-decoration: none; color: #000;} 
+        nav ul li a:hover{color: blue;}
+
+        #slider{width: 1475px; height: 560px; margin: 0 auto;}
+        #slider > img{width: 100%; height: 100%;}
+
+        section{width: 1280px; height: 1500px; background-color: skyblue; margin: 0 auto;}
+
+        #product{width: 100%; height: 700px; justify-content: center; flex-wrap: wrap; margin: 30px 0;
+            float: left; align-content: center; display: flex;}
+
+        #product > h3{width: 100%; font-family: "맑은고딕"; font-size: 20px; color: green; text-align: center;}
+        #product > p{width: 100%; font-family: "맑은고딕"; font-size: 20px; text-align: center;}
+        
+        #product > .productbox{margin: 10px; width: 270px; height: 270px; background-color: red;}
+        
+        #container1 > h3{font-family: "맑은고딕"; color: green; text-align: center; padding-top: 30px;}
+        #container1 > p{font-family: "맑은고딕"; text-align: center;}
+        #container1 > .product2{margin: 20px 0 0 40px; width: 180px; height: 180px; background-color: blue;
+            float: left; display: block; justify-content: space-around;}
+        
+        footer{width: 100%; height: 145px; background-color: gray; margin: 0 auto;}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="https://blog.kakaocdn.net/dn/6ui8u/btqDtzRrCzg/ZM8q87L5frjEl0za6UnIk1/img.jpg"></div>
+        <div id="login">
+            <ul>
+                <li><a href="#">로그인</a></li>
+                <li>|</li>
+                <li><a href="#">회원가입</a></li>
+                <li>|</li>
+                <li><a href="#">Q & A</a></li>
+                <li>|</li>
+                <li><a href="#">LANGUAGE</a></li>
+                <li>|</li>
+            </ul>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">상품</a></li>
+                <li><a href="#">베스트</a></li>
+                <li><a href="#">특가할인</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="#">REVIEW</a></li>
+                <li><a href="#">쿠폰/혜택</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="slider">
+        <img src="https://image11.coupangcdn.com/image/cmg/oms/banner/a13bdfb9-abe6-4db3-879d-68377709c2ea_1280x423.jpg" alt="선물세트">
+    </div>
+    <section>
+        <div id="product">
+            <h4>이상품 어때요?</h4>
+            <p>오늘의 상품입니다.</p>
+            <div class="productbox"><a href="#">1</a></div>
+            <div class="productbox"><a href="#">2</a></div>
+            <div class="productbox"><a href="#">3</a></div>
+            <div class="productbox"><a href="#">4</a></div>
+            <div class="productbox"><a href="#">5</a></div>
+            <div class="productbox"><a href="#">6</a></div>
+            <div class="productbox"><a href="#">7</a></div>
+            <div class="productbox"><a href="#">8</a></div>
+        </div>
+        <div id="container">
+        <h4>지금 뜨고 있는 맞춤 베스트</h4>
+            <p>고객님을 위한 맞춤 Pick</p>
+            <div class="product2"><a href="#">1</a></div>
+            <div class="product2"><a href="#">2</a></div>
+            <div class="product2"><a href="#">3</a></div>
+            <div class="product2"><a href="#">4</a></div>
+            <div class="product2"><a href="#">5</a></div>
+            <div class="product2"><a href="#">6</a></div>
+            <div class="product2"><a href="#">7</a></div>
+            <div class="product2"><a href="#">8</a></div>
+            <div class="product2"><a href="#">9</a></div>
+            <div class="product2"><a href="#">10</a></div>
+        </div>
+    </section>
+    <footer>
+        <div id="box"></div>
+    </footer>
+</body>
+</html>
