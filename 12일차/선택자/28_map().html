@@ -1,5 +1,4 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8" />
@@ -10,20 +9,19 @@
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
 <script>
 //콘솔창에서 출력해보세요.
-var arrName=["갑","을","병","정"];
+  var arrName=["갑","을","병","정"];
 
-$(function(){
-  var arr=arrName.map(function(v,i){
-  	console.log(v,i);
-    return v+i;
+  $(function(){
+    var arr=arrName.map(function(v,i){
+      console.log(v,i);
+      return v+i;
+    });
+
+    console.log(arr);
+
   });
-
-  console.log(arr);
-
-});
 </script>
 </head>
 <body>
-
 </body>
 </html>
